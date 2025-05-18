@@ -6,8 +6,8 @@ import os
 
 # 환경변수 불러오기
 load_dotenv()
-TOKEN = os.getenv("TOKEN")
-GUILD_ID = int(os.getenv("GUILD_ID"))
+TOKEN = os.getenv("")
+GUILD_ID = int(os.getenv("1371827461129506979"))
 
 intents = discord.Intents.default()
 intents.members = True
@@ -109,5 +109,5 @@ async def on_ready():
     await bot.tree.sync(guild=discord.Object(id=GUILD_ID))
     print("✅ 슬래시 명령어 동기화 완료")
 
-
+access_token = os.environ["BOT_TOKEN"]
 bot.run(os.getenv("TOKEN"))

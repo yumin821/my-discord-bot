@@ -1,18 +1,3 @@
-from datetime import datetime
-import sys
-
-now = datetime.now()
-hour = now.hour
-
-# 09:00 ~ 22:00 사이에만 실행
-if hour < 9 or hour > 22:
-    print("⏱️ 현재 봇 실행 시간이 아님! 종료합니다.")
-    sys.exit()
-
-print("✅ 봇 실행 시간입니다. 실행합니다!")
-
-
-
 import discord
 from discord import app_commands
 from discord.ext import commands
